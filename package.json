@@ -1,0 +1,28 @@
+{
+  "name": "myfirstnodeproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+  "collectCoverage":true,
+  "reporters": [
+    "default",
+    [
+      "./node_modules/jest-html-reporter",
+      {
+        "pageTitle": "Test Report",
+        "outputPath": "./test-report/index.html" 
+      }
+    ]
+  ]
+},
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-html-reporter": "^3.10.2"
+  }
+}
